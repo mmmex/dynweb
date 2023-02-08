@@ -32,10 +32,11 @@ django    | http://localhost:8081
 nodejs    | http://localhost:8082
 wordpress | http://localhost:8083
 
-4. Командой `docker-compose ps` можем увидеть запущенные контейнеры:
+4. Выполним вход на ВМ: `vagrant ssh dynweb`
+5. Командой `docker-compose ps` можем увидеть запущенные контейнеры:
 
 ```bash
-vagrant@DynamicWeb:~/project$ docker-compose ps
+vagrant@dynweb:~/project$ docker-compose ps
   Name                 Command               State                                                                  Ports                                                                
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 app         gunicorn --workers=2 --bin ...   Up                                                                                                                                          
