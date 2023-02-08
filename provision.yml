@@ -1,5 +1,5 @@
 ---
-- hosts: DynamicWeb # имя хоста, который мы создадим Vagrant`om
+- hosts: dynweb # имя хоста, который мы создадим Vagrant`om
   become: yes # Установка Docker через sudo
   gather_facts: false
   tasks: # Перечисляем задачи которые выполнит наш playbook
